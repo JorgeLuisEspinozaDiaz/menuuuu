@@ -1,0 +1,31 @@
+.homeService {
+   @apply py-[4rem];
+
+   background: url(/back.jpg);
+   background-repeat: no-repeat;
+   mix-blend-mode: multiply;
+   background-size: contain;
+   background-attachment: fixed;
+
+   @screen laptop {
+      padding-top: calc(6rem * var(--scale));
+      padding-bottom: calc(5rem * var(--scale));
+   }
+}
+.homeService-tile {
+   @apply text-[2.5rem] font-bold text-blacks text-center  py-[2rem];
+   @screen laptop {
+      @apply break-words text-center flex justify-center;
+      width: calc(50% * var(--scale));
+      font-size: calc(4rem * var(--scale));
+      padding-bottom: calc(4rem * var(--scale));
+   }
+}
+
+.container-card {
+   @apply flex flex-wrap gap-[5rem] justify-center pt-[1rem];
+   @screen laptop {
+      padding-bottom: calc(5rem * var(--scale));
+      gap: calc(8rem * var(--scale));
+   }
+}

@@ -1,0 +1,24 @@
+.btnQuote {
+   @apply flex w-[16.6rem] h-[5.1rem] gap-[0.3rem]  cursor-pointer;
+}
+.span-quote {
+   @apply h-[5.1rem] w-[0.3rem] bg-[#6B4938];
+}
+.btns-quote {
+   @apply w-[16.1rem] h-[5.1rem] hover:text-withes;
+}
+
+.btn-spanQuote {
+   @apply text-[1.8rem]  text-blacks font-medium hover:text-withes;
+}
+.btnQuote:hover .span-quote {
+   @apply bg-green text-withes;
+}
+
+.btnQuote:hover .btn-spanQuote {
+   @apply text-withes;
+}
+
+.btnQuote:hover .btns-quote {
+   @apply bg-green;
+}

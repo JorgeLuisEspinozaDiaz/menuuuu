@@ -1,0 +1,53 @@
+.homeBanner {
+   @apply relative min-h-[100vh] flex justify-center  items-center;
+}
+
+.homeBanner-video {
+   @apply absolute top-0 left-0 w-full h-full object-cover;
+}
+
+.homeBanner-text {
+   @apply relative z-20 flex items-center flex-col gap-y-2;
+}
+
+.homeBanner-contaTex {
+   @apply flex gap-4 items-center;
+   @screen laptop {
+      gap: calc(3.2rem * var(--scale));
+   }
+}
+
+.homeBanner-title {
+   @apply text-[3.21rem] text-withes;
+   @screen laptop {
+      font-size: calc(5.781rem * var(--scale));
+   }
+}
+
+.homeBanner-subtitle {
+   @apply text-[5.219rem] text-withes text-center leading-[1.2] font-extrabold;
+   @screen laptop {
+      font-size: calc(8.8rem * var(--scale));
+   }
+}
+
+.homeBanner-span {
+   @apply text-[1.5rem] text-withes font-normal;
+   @screen laptop {
+      font-size: calc(3rem * var(--scale));
+      margin-top: calc(0.5rem * var(--scale));
+   }
+}
+
+.homeBanner-button {
+   margin-top: 2rem;
+   @screen laptop {
+      margin-top: calc(2rem * var(--scale));
+   }
+}
+.homeBanner-capa {
+   @apply absolute top-0 left-0 w-full h-full bg-[#1c1c1d] opacity-[0.5] mix-blend-overlay;
+}
+.icon-spot {
+   @apply text-green;
+}

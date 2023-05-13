@@ -1,0 +1,63 @@
+.homeProject {
+   @apply py-[4rem];
+   background: rgba(255, 249, 238, 0.5);
+   @screen laptop {
+      padding-top: calc(9rem * var(--scale));
+      padding-bottom: calc(10rem * var(--scale));
+   }
+}
+.homeProject-title {
+   @apply font-bold text-[2.5rem] text-blacks text-center pb-[2rem];
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      padding-bottom: calc(4rem * var(--scale));
+   }
+}
+.HomeGallery-arrow {
+   @apply bg-white text-primary absolute cursor-pointer z-10 flex justify-center items-center;
+}
+
+.HomeGallery-prev {
+   border-radius: 10.9804px 0px 0px 10.9804px;
+   @apply w-[1.757rem]  h-[5.6rem] bg-green -left-8;
+
+   @screen tablet {
+      border-top-left-radius: calc(1.5rem * var(--scale));
+      border-bottom-left-radius: calc(1.5rem * var(--scale));
+   }
+   @screen laptop {
+      width: calc(4.8rem * var(--scale));
+      height: calc(15.3rem * var(--scale));
+      left: calc(-5rem * var(--scale));
+      border-top-left-radius: calc(3rem * var(--scale));
+      border-bottom-left-radius: calc(3rem * var(--scale));
+   }
+}
+
+.HomeGallery-next {
+   border-radius: 0px 10.9804px 10.9804px 0px;
+   @apply w-[1.757rem]  h-[5.6rem] bg-green  -right-8;
+   @screen tablet {
+      border-top-right-radius: calc(1.5rem * var(--scale));
+      border-bottom-right-radius: calc(1.5rem * var(--scale));
+   }
+   @screen laptop {
+      width: calc(4.8rem * var(--scale));
+      height: calc(15.3rem * var(--scale));
+      right: calc(-5rem * var(--scale));
+      border-top-right-radius: calc(3rem * var(--scale));
+      border-bottom-right-radius: calc(3rem * var(--scale));
+   }
+}
+.icon-arrow-left {
+   @apply text-[1rem];
+   @screen laptop {
+      font-size: calc(2.5rem * var(--scale));
+   }
+}
+.icon-arrow-rigth {
+   @apply text-[1rem];
+   @screen laptop {
+      font-size: calc(2.5rem * var(--scale));
+   }
+}

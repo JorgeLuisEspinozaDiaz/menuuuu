@@ -1,0 +1,58 @@
+.cardProjects {
+   @apply h-[34.983rem] relative flex justify-center cursor-pointer z-40;
+   &:hover {
+      .cardProjects-conte:before {
+         opacity: 1;
+         transition: all 0.3s ease-in-out;
+      }
+
+      .cardProjects-capa {
+         @apply visible;
+      }
+   }
+
+   @screen laptop {
+      height: calc(51.6rem * var(--scale));
+   }
+}
+
+.cardProjects-conte {
+   @apply absolute flex items-end justify-between  w-full h-full px-[2.5rem] pb-[2.5rem];
+   &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(96, 96, 96, 0.7);
+      mix-blend-mode: multiply;
+      opacity: 0;
+      z-index: 2;
+   }
+}
+.cardProjects-text {
+   @apply z-50;
+}
+.cardProjects-capa {
+   @apply flex justify-between w-full items-center invisible;
+}
+.cardProjects-title {
+   @apply text-[1.6rem] font-semibold text-withes;
+   @screen laptop {
+      font-size: calc(2.5rem * var(--scale));
+   }
+}
+.cardProjects-subtitle {
+   @apply text-[1.4rem] font-normal text-withes;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+.cardProjects-glass {
+   @apply w-[4.089rem] h-[4.089rem] rounded-full bg-green flex items-center justify-center z-[4];
+   @screen laptop {
+      width: calc(5rem * var(--scale));
+      height: calc(5rem * var(--scale));
+   }
+}

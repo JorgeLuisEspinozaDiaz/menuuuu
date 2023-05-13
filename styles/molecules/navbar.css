@@ -1,0 +1,154 @@
+.Navbar {
+  padding-top: 1.3rem;
+  padding-bottom: 2rem;
+  border-radius: 0 0 1.5rem 1.5rem;
+  transform: translateY(-101%);
+  transition: transform 0.3s ease;
+  @apply fixed top-0 right-0 left-0 bg-primary;
+
+  @media screen(laptop) {
+    @apply static inset-auto p-0 transform-none rounded-none  w-full bg-white;
+    height: calc(10.5rem * var(--scale));
+  }
+
+  &.isActive {
+    transform: translateY(0);
+  }
+
+  &-container {
+    margin-right: 6.3rem;
+    @apply flex justify-between ml-[2.7rem];
+  }
+  &-ctn {
+    @media screen(laptop) {
+      @apply flex items-center h-full;
+    }
+  }
+
+  .Logo {
+    @apply hidden;
+    @screen laptop {
+      top: -3rem;
+      @apply !block;
+    }
+  }
+
+  .socials {
+    font-size: 2rem;
+    margin-top: 0.9rem;
+    margin-right: 1rem;
+    @apply flex text-white gap-[2rem];
+
+    @screen laptop {
+      @apply hidden;
+    }
+  }
+
+  &-ul {
+    margin-top: 9.3rem;
+    font-size: 1.7rem;
+    @apply font-light flex flex-col text-[#fff];
+    @media screen(laptop) {
+      @apply flex flex-row font-normal items-center justify-end mt-0;
+      font-size: calc(2rem * var(--scale));
+      margin-right: calc(5.4rem * var(--scale));
+      gap: calc(4rem * var(--scale));
+      width: 100%;
+    }
+  }
+
+  &-li {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.4rem 0;
+    transition: color 0.5s ease;
+    @apply px-12 relative cursor-pointer;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    @screen laptop {
+      @apply !text-black;
+    }
+    &.isActive {
+      @apply font-medium;
+      @media screen(laptop) {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+    /* i {
+      @apply hidden;
+    }
+    span {
+      @apply hidden;
+    }*/
+    @media screen(laptop) {
+      @apply border-none p-0 relative text-black;
+      k &:hover,
+      &.isActive {
+        &::after {
+          opacity: 1;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.25s;
+      }
+      &::before {
+        top: -3px;
+        transform-origin: left;
+      }
+      &::after {
+        bottom: -3px;
+        transform-origin: left;
+      }
+      &:hover::before,
+      &:hover::after,
+      &.isActive::before,
+      &.isActive::after {
+        transform: scaleX(1);
+      }
+    }
+    &.isActive {
+      &.contact {
+        @screen laptop {
+          @apply text-white bg-black !font-semibold;
+        }
+      }
+    }
+    &.contact {
+      @apply text-white;
+      @media screen(laptop) {
+        @apply bg-primary  !text-white font-medium font-rubick leading-none overflow-hidden relative items-center flex text-[1.5rem] gap-[.8rem];
+        padding: 0.8em 1.2em;
+        /* border-radius: 5rem; */
+        border-radius: 2px;
+        transition: background-color 0.5s ease, color 0.5s ease;
+
+        @media (hover: hover) {
+          &:hover {
+            @apply !text-white bg-black;
+          }
+        }
+        @media screen(laptop) {
+          font-size: calc(2rem * var(--scale));
+          line-height: calc(1.5rem * var(--scale));
+          padding: calc(2.2rem * var(--scale)) calc(3rem * var(--scale));
+        }
+        span {
+          @apply hidden;
+          @media screen(laptop) {
+            @apply block;
+          }
+        }
+      }
+    }
+  }
+}

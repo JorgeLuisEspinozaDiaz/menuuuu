@@ -1,0 +1,73 @@
+.CardBlog {
+   @apply w-[full] h-[35.887rem] cursor-pointer;
+   &:hover {
+      .imgBlog {
+         scale: 1.1;
+         transition: all 0.3s ease-in-out;
+      }
+      .CardBlog-title {
+         @apply text-green;
+         transition: all 0.3s ease-in-out;
+      }
+   }
+   @screen laptop {
+      width: calc(auto * var(--scale));
+      height: calc(51.2rem * var(--scale));
+   }
+}
+.CardBlog:hover .cardBlog-img:before {
+   opacity: 1;
+   transition: all 0.3s ease-in-out;
+}
+
+.cardBlog-img {
+   @apply w-[full] h-[17.986rem]  overflow-hidden relative;
+   transition: all 0.3s ease-in-out;
+   &:before {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+   }
+   @screen laptop {
+      height: calc(26.7rem * var(--scale));
+   }
+}
+.cardBlog-tips {
+   @apply absolute -top-[1.2rem] left-[2.4rem];
+   @screen laptop {
+      bottom: calc(-1.9rem * var(--scale));
+      left: calc(3.5rem * var(--scale));
+   }
+}
+.cardBlog-conta {
+   @apply p-[2.5rem] border border-[#D9D9D9] z-[2];
+   @screen laptop {
+      padding-top: calc(4rem * var(--scale));
+      padding-left: calc(4rem * var(--scale));
+      padding-right: calc(4rem * var(--scale));
+      padding-bottom: calc(4rem * var(--scale));
+   }
+}
+.CardBlog-title {
+   @apply font-semibold text-[1.866rem] leading-[2.454rem] text-blacks py-[1rem];
+   transition: 0.3s;
+   @screen laptop {
+      font-size: calc(2.6rem * var(--scale));
+      line-height: calc(3.419rem * var(--scale));
+      padding-top: calc(1.5rem * var(--scale));
+      padding-bottom: calc(1.2rem * var(--scale));
+   }
+}
+.CardBlog-subtitle {
+   @apply font-light text-[1.5rem] leading-[2.4rem] text-textp;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}

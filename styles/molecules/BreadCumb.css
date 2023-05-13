@@ -1,0 +1,33 @@
+.BreadCumbs {
+   @apply mb-[rem] mt-[2rem];
+   @media screen(laptop) {
+      margin-top: calc(3rem * var(--scale));
+   }
+
+   &-list {
+      @apply flex gap-x-[1rem];
+   }
+   &-li {
+      @apply text-[1.354rem] leading-[1.7rem] font-normal font-roboto;
+      &::after {
+         @apply ml-[.7rem];
+         content: '/';
+      }
+      &:last-child {
+         @apply font-semibold;
+         width: 70px;
+         white-space: nowrap;
+         overflow: hidden;
+         text-overflow: ellipsis;
+         &::after {
+            content: '';
+         }
+      }
+
+      @media screen(laptop) {
+         @apply font-light;
+         font-size: calc(2rem * var(--scale));
+         line-height: calc(2.2rem * var(--scale));
+      }
+   }
+}

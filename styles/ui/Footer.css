@@ -1,0 +1,72 @@
+.footer {
+   @apply bg-[#0E0E0E] py-[4.5rem] flex items-center;
+   @screen laptop {
+      padding-top: calc(5rem * var(--scale));
+      padding-bottom: calc(6rem * var(--scale));
+   }
+}
+.footer-span {
+   @apply text-withes hidden font-normal;
+   @screen laptop {
+      @apply text-withes;
+      display: block;
+      font-size: calc(1.6rem * var(--scale));
+   }
+}
+
+.footer-ul {
+   @apply flex flex-col gap-[2rem] w-[90%] mx-auto;
+   @screen laptop {
+      @apply flex-row items-center justify-center;
+      gap: calc(7rem * var(--scale));
+   }
+}
+
+.icon-phone {
+   @apply text-withes text-[2rem];
+   @screen laptop {
+      font-size: calc(2.3rem * var(--scale));
+   }
+}
+.icon-message {
+   @apply text-withes text-[1.3rem];
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+   }
+}
+.icon-location {
+   @apply text-withes text-[1.7rem];
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.icon-calendar {
+   @apply text-withes text-[1.7rem];
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.footer-phone {
+   @apply text-withes text-[1.343rem] font-normal;
+   @screen laptop {
+      font-size: calc(1.629rem * var(--scale));
+   }
+}
+.footer-email {
+   @apply text-withes text-[1.343rem] font-normal;
+   @screen laptop {
+      font-size: calc(1.629rem * var(--scale));
+   }
+}
+.footer-location {
+   @apply text-withes text-[1.343rem] font-normal;
+   @screen laptop {
+      font-size: calc(1.629rem * var(--scale));
+   }
+}
+.footer-calendar {
+   @apply text-withes text-[1.343rem] font-normal;
+   @screen laptop {
+      font-size: calc(1.629rem * var(--scale));
+   }
+}

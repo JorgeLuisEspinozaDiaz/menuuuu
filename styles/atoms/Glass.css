@@ -1,0 +1,6 @@
+.glass {
+   @apply w-[4.089rem] h-[4.089rem]  rounded-full bg-green flex items-center justify-center;
+}
+.glass-ic {
+   @apply w-[1.726rem] h-[1.726rem]  rounded-full text-white;
+}

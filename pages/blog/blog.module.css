@@ -1,0 +1,103 @@
+.blog {
+   @apply pt-[8rem];
+   @screen laptop {
+      padding-top: calc(12rem * var(--scale));
+   }
+}
+.blogSec {
+   @apply text-[1.354rem] font-light;
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.blogTitle {
+   @apply text-[2.5rem] font-bold leading-[3.013rem] py-[2rem];
+   @screen laptop {
+      @apply break-words text-center;
+      width: calc(65% * var(--scale));
+      line-height: calc(4.82rem * var(--scale));
+      font-size: calc(4rem * var(--scale));
+      margin-top: calc(3.5rem * var(--scale));
+      margin-bottom: calc(3.5rem * var(--scale));
+   }
+}
+.blogConte {
+   @apply flex flex-col gap-[4rem] pb-[4rem];
+   @screen tablet {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 3rem;
+   }
+   @screen laptop {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 3rem;
+   }
+}
+
+/* DETAILS*/
+.details {
+   @apply pt-[7rem];
+   @screen laptop {
+      padding-top: calc(12rem * var(--scale));
+      padding-bottom: calc(7rem * var(--scale));
+   }
+}
+
+.detailsContainer {
+   @apply pt-[1rem] pb-[2rem];
+   @screen laptop {
+      display: grid;
+      grid-template-columns: 65% auto;
+      gap: calc(6rem * var(--scale));
+      padding-top: calc(3rem * var(--scale));
+      padding-bottom: calc(3.5rem * var(--scale));
+   }
+}
+.blogDconte {
+   @apply flex py-[1.2rem];
+}
+
+.blogdTitle {
+   @apply text-[2.8rem] text-[#1A1A1A] leading-[3.388rem] py-[1.5rem] font-semibold;
+   @screen laptop {
+      font-size: calc(3.5rem * var(--scale));
+      padding-top: calc(3rem * var(--scale));
+      padding-bottom: calc(3rem * var(--scale));
+   }
+}
+.blogSTitle {
+   @apply text-[1.5rem]  text-textp leading-[2.55rem] font-light;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.3rem * var(--scale));
+   }
+}
+.detailsCard {
+   @apply flex flex-col gap-[3rem] my-[5rem];
+   @screen tablet {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: calc(3rem * var(--scale));
+   }
+   @screen laptop {
+      @apply flex flex-col my-0;
+      gap: calc(2rem * var(--scale));
+      padding-bottom: calc(6rem * var(--scale));
+   }
+}
+.blogdImage {
+   @apply relative  h-auto;
+   @screen laptop {
+      height: calc(51.477rem * var(--scale));
+   }
+}
+.blogdTips {
+   @apply absolute top-[2rem] left-[2rem];
+}
+.blogCoTitle {
+   @apply flex flex-col gap-[1.3rem];
+   @screen laptop {
+      gap: calc(1.7rem * var(--scale));
+   }
+}

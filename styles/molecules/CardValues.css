@@ -1,0 +1,68 @@
+.cardValues {
+   @apply w-[auto] h-[22.3rem] bg-[#FEF3DD] flex flex-col justify-center items-center  pt-[4rem] pb-[4rem] px-[6rem];
+   @screen laptop {
+      height: calc(37rem * var(--scale));
+      padding-top: calc(2rem * var(--scale));
+      padding-bottom: calc(2rem * var(--scale));
+      padding-left: calc(4rem * var(--scale));
+      padding-rigth: calc(4rem * var(--scale));
+   }
+}
+
+.imag {
+   @apply w-[2.403rem];
+   @screen laptop {
+      /* padding-bottom: calc(2rem * var(--scale)); */
+      width: calc(4.713rem * var(--scale));
+      height: calc(5.916rem * var(--scale));
+   }
+}
+.i {
+   @apply w-full h-full object-contain;
+}
+.cardValues-conta {
+   @apply flex flex-col  gap-[1.1rem];
+   @screen laptop {
+      gap: calc(1.6rem * var(--scale));
+   }
+}
+.cardValues-title {
+   @apply font-semibold text-blacks text-[1.4rem];
+   @screen laptop {
+      font-size: calc(2.2rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+.cardValues-subtitle {
+   @apply font-light text-[1.4rem] text-textp;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+
+/* .card-0 {
+   @apply bg-black;
+}
+.card-1 {
+   @apply bg-green;
+} */
+
+.card-2 {
+   @apply bg-blacks;
+   .cardValues-title {
+      @apply text-withes;
+   }
+   .cardValues-subtitle {
+      @apply text-withes;
+   }
+}
+
+.card-4 {
+   @apply bg-blacks;
+   .cardValues-title {
+      @apply text-withes;
+   }
+   .cardValues-subtitle {
+      @apply text-withes;
+   }
+}

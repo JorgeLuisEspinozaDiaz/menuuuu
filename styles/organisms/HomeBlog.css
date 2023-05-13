@@ -1,0 +1,35 @@
+.HomeBlog {
+   @apply py-[3rem];
+   @screen laptop {
+      padding-top: calc(6rem * var(--scale));
+      padding-bottom: calc(8rem * var(--scale));
+   }
+}
+
+.HomeBlog-title {
+   @apply text-[2.5rem] text-blacks font-bold;
+   @screen laptop {
+      @apply break-words text-center;
+      width: calc(60% * var(--scale));
+      font-size: calc(4rem * var(--scale));
+      padding-bottom: calc(3.5rem * var(--scale));
+      text-align: center;
+      line-height: calc(4.82rem * var(--scale));
+   }
+}
+.HomeBlog-cardConta {
+   @apply py-[3rem] flex flex-col gap-[4rem];
+   @screen tablet {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 3rem;
+   }
+   @screen laptop {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      column-gap: 3rem;
+   }
+}
+.HomeBlog-bottom {
+   @apply flex justify-center items-center pt-[2rem];
+}

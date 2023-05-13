@@ -1,0 +1,51 @@
+.InfoHeader {
+  @apply hidden;
+  @screen laptop {
+    @apply block relative bg-primary z-[1];
+    z-index: 40;
+  }
+  &-container {
+    width: 77.2%;
+    max-width: 150.6rem;
+    height: calc(4.6rem * var(--scale));
+    @apply flex justify-between mx-auto items-center;
+    @screen laptop {
+      gap: calc(10rem * var(--scale));
+    }
+    @screen desktop {
+      gap: calc(12rem * var(--scale));
+    }
+  }
+  &-ul {
+    @apply flex items-center text-white font-light;
+    gap: calc(5rem * var(--scale));
+  }
+
+  &-li {
+    @apply flex items-center relative;
+    /* span {
+      @apply font-normal leading-[1.7rem];
+      letter-spacing: 0.02em;
+      font-size: calc(1.6rem * var(--scale));
+    } */
+    & > .socials {
+      font-size: calc(1.45rem * var(--scale));
+      gap: calc(1.5rem * var(--scale));
+      @apply flex text-white items-center   justify-center;
+      & > div {
+        @apply bg-white flex justify-center  rounded-full items-center pt-[.4rem];
+        height: calc(2.8rem * var(--scale));
+        width: calc(2.8rem * var(--scale));
+      }
+    }
+  }
+
+  &-a {
+    gap: calc(1.2rem * var(--scale));
+    font-size: calc(1.55rem * var(--scale));
+    @apply flex items-center font-normal;
+  }
+  /* i {
+    @apply text-white;
+  } */
+}

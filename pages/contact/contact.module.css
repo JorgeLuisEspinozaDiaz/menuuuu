@@ -1,0 +1,103 @@
+.contact {
+   @apply mt-[6rem];
+   @screen laptop {
+      padding-top: calc(10.5rem * var(--scale));
+      padding-bottom: calc(10.5rem * var(--scale));
+      gap: calc(10rem * var(--scale));
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: calc(10rem * var(--scale));
+   }
+}
+.contactImg {
+   @apply hidden;
+   @screen laptop {
+      display: block;
+      filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+   }
+}
+.contactTitle {
+   @apply text-[2.5rem] text-blacks leading-[3.013rem] font-bold py-[2rem];
+   @screen laptop {
+      padding-top: calc(0rem * var(--scale));
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(4.82rem * var(--scale));
+   }
+}
+
+.formLabel {
+   @apply font-normal text-[1.5rem] text-textp;
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.contactTitleS {
+   @apply font-normal text-[1.5rem] pb-[1rem] text-textp;
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+      padding-bottom: calc(1.5rem * var(--scale));
+   }
+}
+.form {
+   @apply grid grid-cols-1 gap-[1.7rem] pb-[5.5rem];
+   @screen laptop {
+      padding-bottom: 0;
+      gap: calc(2.2rem * var(--scale));
+   }
+}
+.formInput {
+   height: 4rem;
+   border-radius: 0.45rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   font-size: 1.6rem;
+   border: 1px solid #c5c5c5;
+   @screen laptop {
+      height: calc(4.5rem * var(--scale));
+   }
+}
+.flexs {
+   @screen laptop {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: calc(2rem * var(--scale));
+   }
+}
+.formCheck {
+   @apply flex gap-[1rem] items-center;
+   @screen laptop {
+      gap: calc(1.5rem * var(--scale));
+   }
+}
+.check {
+   @apply w-[2.499rem] h-[2.499rem];
+   @screen laptop {
+      width: calc(3rem * var(--scale));
+      height: calc(3rem * var(--scale));
+   }
+}
+.containerCheck {
+   @apply flex flex-col gap-[.8rem];
+   @screen laptop {
+      @apply grid grid-cols-2 w-[80%];
+   }
+}
+.formInputarea {
+   height: 13.6rem;
+   border-radius: 0.45rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   padding-top: 1rem;
+   font-size: 1.6rem;
+   border: 1px solid #afafaf;
+   resize: none;
+   @screen laptop {
+      height: calc(16.4rem * var(--scale));
+   }
+}
+.container {
+   @apply flex flex-col gap-[.4rem];
+   @screen laptop {
+      gap: calc(1rem * var(--scale));
+   }
+}

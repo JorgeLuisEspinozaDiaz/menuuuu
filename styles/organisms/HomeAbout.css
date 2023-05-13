@@ -1,0 +1,142 @@
+.homeAbout {
+   @apply py-[4rem];
+   @screen tabletxl {
+      @apply grid grid-cols-2;
+   }
+   @screen tabletlg {
+      @apply grid grid-cols-2;
+      gap: calc(4rem * var(--scale));
+   }
+   @screen laptop {
+      gap: calc(10rem * var(--scale));
+      padding-top: calc(12rem * var(--scale));
+      padding-bottom: calc(12rem * var(--scale));
+   }
+}
+.homeAbout-img {
+   border-bottom-left-radius: 4.5rem;
+   @screen laptop {
+      border-bottom-left-radius: calc(9rem * var(--scale));
+   }
+}
+
+.homeAbout-painterImg {
+   @apply mx-auto relative max-w-[50rem];
+   @screen laptop {
+      width: calc(65.7rem * var(--scale));
+      height: calc(62rem * var(--scale));
+      max-width: calc(100rem * var(--scale));
+   }
+}
+.homeAbout-pinkImg {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute -z-10;
+      width: calc(28.4rem * var(--scale));
+      height: calc(28.4rem * var(--scale));
+      top: calc(-4.5rem * var(--scale));
+      left: calc(-4.7rem * var(--scale));
+   }
+}
+
+.homeAbout-green {
+   @apply w-[11.2rem] h-[11.2rem] bg-green absolute 
+   -bottom-[2rem] -right-[2rem] flex justify-center flex-col items-center py-4;
+   border-top-left-radius: 0.9rem;
+   border-bottom-left-radius: 0.9rem;
+   border-bottom-right-radius: 0.9rem;
+   border-top-right-radius: 3rem;
+   @screen laptop {
+      width: calc(20.2rem * var(--scale));
+      height: calc(20.2rem * var(--scale));
+      border-top-left-radius: calc(2.278rem * var(--scale));
+      border-bottom-left-radius: calc(2.278rem * var(--scale));
+      border-bottom-right-radius: calc(2.278rem * var(--scale));
+      border-top-right-radius: calc(6.835rem * var(--scale));
+      bottom: calc(-4.5rem * var(--scale));
+      right: calc(-4rem * var(--scale));
+   }
+}
+.homeAbout-span1 {
+   @apply font-medium text-[1.4rem] text-withes   leading-[1.659rem];
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.252rem * var(--scale));
+   }
+}
+
+.homeAbout-span2 {
+   @apply font-bold text-[3.3rem] text-withes leading-[3.911rem];
+   @screen laptop {
+      font-size: calc(5.957rem * var(--scale));
+      line-height: calc(7.059rem * var(--scale));
+   }
+}
+.homeAbout-span3 {
+   @apply font-medium text-[1.4rem] text-withes   leading-[1.729rem] text-center;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(2.252rem * var(--scale));
+   }
+}
+
+.homeAbout-conten {
+   @apply pt-[2rem];
+   @screen laptop {
+      padding-top: calc(2rem * var(--scale));
+   }
+}
+.homeAbout-conten-title {
+   @apply text-[2.5rem] text-blacks leading-[3.013rem] font-bold;
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(4rem * var(--scale));
+   }
+}
+.homeAbout-conten-subtitle {
+   @apply text-[1.5rem] font-light leading-[2.4rem] text-textp pt-[1rem];
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      padding-top: calc(2.5rem * var(--scale));
+   }
+}
+
+.homeAbout-conte-card {
+   @apply flex flex-col gap-[1.5rem] pt-[2rem];
+   @screen laptop {
+      padding-top: calc(2.5rem * var(--scale));
+      gap: calc(2rem * var(--scale));
+   }
+}
+.homeAbout-card {
+   @apply w-[auto] h-auto flex border  border-green;
+   border-radius: 0px 50px 50px 0px;
+}
+.homeAbout-cardLine {
+   @apply w-[3rem] h-auto bg-green;
+   @screen laptop {
+      width: calc(3.5rem * var(--scale));
+   }
+}
+
+.homeAbout-cardConte {
+   @apply pr-[3rem] pl-[1.5rem] pt-[1.5rem] pb-[1.5rem];
+   @screen laptop {
+      padding-rigth: calc(9rem * var(--scale));
+      padding-left: calc(4rem * var(--scale));
+      padding-top: calc(3rem * var(--scale));
+      padding-bottom: calc(3rem * var(--scale));
+   }
+}
+.homeAbout-cardTitle {
+   @apply text-[1.6rem] font-medium text-green;
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}
+.homeAbout-cardSubtitle {
+   @apply text-[1.5rem] font-light text-textp;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}

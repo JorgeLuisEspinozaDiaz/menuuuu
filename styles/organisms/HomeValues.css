@@ -1,0 +1,69 @@
+.homeValues {
+   @apply pt-[5rem] flex flex-col gap-[2rem];
+   @media screen(laptop) {
+      @apply grid grid-cols-2 gap-[20rem];
+      gap: calc(20rem * var(--scale));
+      padding-top: calc(10rem * var(--scale));
+      padding-bottom: calc(2.5rem * var(--scale));
+   }
+}
+.homeValues-swiper {
+   @apply py-[3rem];
+   @media screen(laptop) {
+      padding-bottom: calc(10rem * var(--scale));
+   }
+}
+.homeValues-Text {
+   @apply w-[auto] h-[auto] bg-withes  flex gap-[1rem];
+   @media screen(laptop) {
+      gap: calc(1.8rem * var(--scale));
+   }
+}
+.homeValues-line {
+   @apply w-[1.3rem] h-[auto] bg-lightgreen rounded-[2.662rem];
+   @media screen(laptop) {
+      @apply bg-green;
+      width: calc(2rem * var(--scale));
+   }
+}
+.homeValues-conteText {
+   @apply flex flex-col gap-[.3rem];
+}
+.homeValues-title {
+   @apply text-[2.5rem] leading-[2.9rem] font-extrabold text-blacks;
+   @media screen(laptop) {
+      font-size: calc(3.5rem * var(--scale));
+      line-height: calc(4.218rem * var(--scale));
+   }
+}
+.homeValues-subtitle {
+   @apply text-[2.5rem] leading-[2.9rem] font-semibold text-blacks;
+   @media screen(laptop) {
+      font-size: calc(3.5rem * var(--scale));
+      line-height: calc(4.55rem * var(--scale));
+   }
+}
+.homeValues-paragraph {
+   @apply text-[1.5rem]   text-textp font-light;
+   @media screen(laptop) {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+
+.swiper-wrapper {
+   gap: 0;
+}
+
+.HomeCharac-pagination {
+   @apply flex justify-center items-center gap-4 my-[2rem] cursor-pointer;
+   @screen laptop {
+      display: none;
+   }
+}
+.swiper-pagination-bullet {
+   @apply w-[1rem] h-[1rem]  rounded-full;
+   background: rgba(164, 124, 104, 0.4);
+}
+.swiper-pagination-bullet-active {
+   @apply w-[1rem] h-[1rem]  bg-brown;
+}

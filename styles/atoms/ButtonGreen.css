@@ -1,0 +1,36 @@
+.btnGreen {
+   @apply flex w-[13.6rem] h-[3.778rem] gap-[0.3rem]  cursor-pointer;
+   transition: ease-int 0.9s;
+   @screen laptop {
+      width: calc(16.2rem * var(--scale));
+      height: calc(4.5rem * var(--scale));
+   }
+}
+.span-green {
+   @apply h-[3.778rem] w-[0.252rem] bg-browns;
+   @screen laptop {
+      width: calc(0.3rem * var(--scale));
+      height: calc(4.5rem * var(--scale));
+   }
+}
+.btns-green {
+   @apply w-[13.137rem] h-[3.815rem] bg-browns text-withes;
+   @screen laptop {
+      width: calc(15.7rem * var(--scale));
+      height: calc(4.5rem * var(--scale));
+   }
+}
+
+.btn-spanGreen {
+   @apply text-[1.5rem]  text-withes font-medium hover:text-withes;
+   @screen laptop {
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+.btnGreen:hover .span-green {
+   @apply bg-green;
+}
+
+.btnGreen:hover .btns-green {
+   @apply bg-green;
+}

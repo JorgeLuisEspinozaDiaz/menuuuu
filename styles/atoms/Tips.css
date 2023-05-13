@@ -1,0 +1,13 @@
+.tips {
+   @apply w-[5.861rem] h-[2.56rem] bg-green flex justify-center items-center;
+   @screen laptop {
+      width: calc(8.7rem * var(--scale));
+      height: calc(3.8rem * var(--scale));
+   }
+}
+.tips-text {
+   @apply text-withes uppercase text-[1.347rem];
+   @screen laptop {
+      font-size: calc(2rem * var(--scale));
+   }
+}

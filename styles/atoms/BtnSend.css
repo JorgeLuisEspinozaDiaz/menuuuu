@@ -1,0 +1,38 @@
+.btnSend {
+   @apply flex w-[9.164rem] h-[2.687rem] gap-[0.3rem]  cursor-pointer;
+   transition: all 0.5s ease-in-out;
+   @screen laptop {
+      width: calc(11rem * var(--scale));
+      height: calc(5.1rem * var(--scale));
+   }
+}
+.span-send {
+   @apply h-[4.249rem] w-[0.25rem] bg-browns;
+   @screen laptop {
+      width: calc(0.3rem * var(--scale));
+      height: calc(5.1rem * var(--scale));
+   }
+}
+.btns-send {
+   @apply w-[8.699rem] h-[4.299rem] bg-browns text-withes;
+   @screen laptop {
+      width: calc(10.5rem * var(--scale));
+      height: calc(5.1rem * var(--scale));
+   }
+}
+
+.btn-send {
+   @apply text-[1.5rem]  text-withes font-medium hover:text-withes;
+   @screen laptop {
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+.btnSend:hover .span-send {
+   @apply bg-green;
+   transition: all 0.5s ease-in-out;
+}
+
+.btnSend:hover .btns-send {
+   @apply bg-green;
+   transition: all 0.5s ease-in-out;
+}
